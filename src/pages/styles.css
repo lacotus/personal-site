@@ -1,0 +1,50 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container to hold the background image and shape */
+.container {
+  position: relative; /* So the shape can be absolutely positioned within it */
+  width: 100%;
+  height: 100vh; /* Full viewport height, or adjust as needed */
+  overflow: hidden; /* Hide anything overflowing */
+}
+
+/* Your background image fills the container */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps the aspect ratio of your image */
+  z-index: 1;        /* Place the image "behind" the shape */
+}
+
+/* 
+   The custom shape container. 
+   You can choose top or bottom positioning depending on your design.
+*/
+.custom-shape-divider-bottom-1737100962 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+	z-index: 2;
+}
+
+.custom-shape-divider-bottom-1737100962 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 400px;
+}
+
+.custom-shape-divider-bottom-1737100962 .shape-fill {
+    fill: #1C2E4A;
+}
