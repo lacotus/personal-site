@@ -1,22 +1,22 @@
-LacotusJon/					Root dir
-|- docs/					Documentation, files that describe the project
-	|- project-map.txt		Describe project structure
-	|- todo.txt				List work yet to be completed
-|- node_modules/			
-|- public/					Public files that don't need to be processed
-|- src/						Source code
-	|- assests/				Static files like CSS, images, JS and fonts
-		|- css/
-		|- fonts/
-		|- images/
-		|- js/
-	|- components/			Reusable components
-	|- pages/				Individual page files
-	|- layouts/				Shared layouts for pages
-	|- utils/				Utility functions and helper scripts
-	|- index.html			The entry HTML file
-|- tests/					
-|- .gitignore				Tell git what to ignore
-|- package-lock.json		Locks down dependency versioning
-|- package.json				Project dependencies and metadata
-|- README.md				Describe the project purpose, setup and usage
+LacotusJon/			Root dir
+  |- docs/			Documentation, files that describe the project
+      |- project-map.txt	Describe project structure
+      |- todo.txt		List work yet to be completed
+  |- node_modules/			
+  |- public/			Public files that don't need to be processed
+  |- src/			Source code
+  	|- assests/		Static files like CSS, images, JS and fonts
+  		|- css/
+  		|- fonts/
+  		|- images/
+  		|- js/
+  	|- components/			Reusable components
+  	|- pages/				Individual page files
+  	|- layouts/				Shared layouts for pages
+  	|- utils/				Utility functions and helper scripts
+  	|- index.html			The entry HTML file
+  |- tests/					
+  |- .gitignore				Tell git what to ignore
+  |- package-lock.json		Locks down dependency versioning
+  |- package.json				Project dependencies and metadata
+  |- README.md				Describe the project purpose, setup and usage
