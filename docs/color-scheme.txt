@@ -1,2 +1,4 @@
-Primary	    | 
-			| 
+Primary	    | #0C2135
+Secondary   | #98BAD3
+Contrast    | #038BCA
+
