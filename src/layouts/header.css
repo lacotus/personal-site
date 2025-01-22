@@ -31,6 +31,7 @@ a {
 
 .nav-branding {
   font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
   color: #98BAD3;
 }
 
@@ -40,7 +41,7 @@ a {
 }
 
 .nav-link:hover {
-  color: dodgerblue;
+  color: #FFFAFA;
 }
 
 .hamburger {
