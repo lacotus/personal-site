@@ -26,6 +26,7 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  color: #98BAD3;
 }
 
 .nav-branding {
@@ -35,6 +36,7 @@ a {
 
 .nav-link {
   transition: 0.7s ease;
+  color: #98BAD3;
 }
 
 .nav-link:hover {
@@ -53,7 +55,7 @@ a {
   margin: 5px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: white;
+  background-color: #98BAD3;
 }
 
 @media(max-width:768px) {

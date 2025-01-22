@@ -32,5 +32,24 @@ function initHamburger() {
   }))
 }
 
-document.addEventListener("DOMContentLoaded", loadHeader);
+function initScrollAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  // Observe elements with the 'slide-in-right' class (or 'slide-from-left', etc.)
+  document.querySelectorAll('.slide-in-right').forEach(elem => {
+    observer.observe(elem);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadHeader();
+  initScrollAnimations();
+});
 
