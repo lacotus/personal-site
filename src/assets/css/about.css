@@ -1,0 +1,63 @@
+.colors-1 {
+  background-color: #98BAD3;
+  color: #0C2135;
+}
+
+.colors-2 {
+  background-color: #0C2135;
+  color: #98BAD3;
+}
+
+.full-section {
+  display: flex;
+  width: 100%;
+  height: 66vh;           /* 66% of the viewport height */
+  overflow: hidden;       /* Hide overflow if needed */
+}
+
+/* Container to ensure a square space for the image (for perfect circle) */
+.image-container {
+  /* Takes 50% of the width of the section */
+  width: 33%;
+  height: 100%;           /* Full height of the section */
+
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center;     /* Center it vertically */
+}
+
+/* The image is scaled and cropped to a circle */
+.section-image {
+  width: auto;             /* Adjust as needed: 80% of the .image-container */
+  height: 80%;           /* Let the width drive the size */
+  border-radius: 50%;     /* Circle crop */
+  object-fit: cover;      /* Crop instead of skewing */
+}
+
+/* Text area: takes the other half of the section */
+.section-container {
+  width: 77%;
+}
+
+.section-text {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  justify-content: center; /* Vertically center text */
+}
+
+.align-right {
+  text-align: right;
+}
+
+/* Example heading & paragraph styling */
+.section-text h2 {
+  margin-bottom: 20px;
+  font-size: 4rem;
+}
+.section-text p {
+  font-size: 2rem;
+  line-height: 1.5;
+}

@@ -3,76 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image with Semi-Circle Overlay</title>
-  <link rel="stylesheet" href="../assets/css/styles.css">
-  <link rel="stylesheet" href="../assets/css/home.css">
-  <link rel="stylesheet" href="../layouts/header.css">
-  <script src="../assets/js/scripts.js" defer></script>
+  <title>Lacotus Jon Spiess-Ebersole Portfolio Page</title>
+  <link rel="stylesheet" href="../assets/css/styles.css"> <!-- Main CSS, applied to all pages -->
+  <link rel="stylesheet" href="../assets/css/home.css">   <!-- CSS for this page, home.html -->
+  <link rel="stylesheet" href="../layouts/header.css">    <!-- CSS for the header layout --> 
+  <link rel="stylesheet" href="../layouts/footer.css">    <!-- CSS for the footer layout -->
+  <script src="../assets/js/scripts.js" defer></script>   <!-- Main JS script -->
 </head>
 <body>
 
-  <!-- Placeholder for the header located in ./src/layouts, loaded in with scripts.js -->
-  <div id="header-container"></div>
+  <div id="header-container"></div>   <!-- Placeholder for header layout loaded in from ./src/layouts with scripts.js -->
 
-  <!-- City background image -->
-  <div class="background-container">
+  <div class="background-container">  <!-- City background image, set behind everything -->
     <img src="../assets/images/city-background.jpg" alt="Background Image" class="background-image">
   </div>
 
   <div id="top-area">
-    <!-- Area which displays my 'About me' paragraph in my home page -->
-    <div class="about-text-area">
-      <p>Hi, I’m Lacotus Jon Spiess-Ebersole. I bring 6 years of professional IT experience, with the last 2 years focused on software development. My expertise spans PowerShell, batch scripting, PowerApps, Power Automate, and SharePoint, allowing me to deliver powerful solutions that streamline workflows and enhance productivity.</p>
+
+    <div class="about-text-area">     <!-- Area which displays my 'About me' paragraph in my home page -->
+      <p>Hi, I’m Lacotus Jon Spiess-Ebersole. I bring 6 years of professional IT experience, with the last 2 years 
+      focused on software development. My expertise spans PowerShell, batch scripting, PowerApps, Power Automate, and 
+      SharePoint, allowing me to deliver powerful solutions that streamline workflows and enhance productivity.</p>
       <br>
-      <p>Beyond technical skills, I pride myself on my strong communication and interpersonal abilities, enabling me to collaborate effectively across teams and translate complex concepts into clear, actionable strategies. Whether solving problems, building applications, or working with people, I thrive on creating value and driving results.</p>
+      <p>Beyond technical skills, I pride myself on my strong communication and interpersonal abilities, enabling me to 
+      collaborate effectively across teams and translate complex concepts into clear, actionable strategies. Whether solving 
+      problems, building applications, or working with people, I thrive on creating value and driving results.</p>
       <br>
       <p>Scroll for more info and thanks for visiting!</p>
     </div>
 
-    <!-- Replace the empty .semi-circle with your custom SVG shape -->
-    <div class="shape">
+    <div class="shape">               <!-- Shape that sits on the bottom of the homepage when first loaded -->
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path 
           d="M600,112.77C268.63,112.77,0,65.52,0,0V120H1200V0C1200,65.52,931.37,112.77,600,112.77Z"
           class="shape-fill"></path>
       </svg>
     </div>
+
   </div>
 
-  <div class="links-container">
-    <a href="about.html" class="link link-colors-1">
+  <div class="links-container">       <!-- Placed below top-area, holds links to nav deeper into the page -->
+
+    <a href="about.html" class="link link-colors-1"> <!-- About link -->
       <p class="link-paragraph-left">find out<br>more about<br>me.</p>
       <h2 class="link-title-right">ABOUT</h2>
     </a>
-    <a href="#" class="link link-colors-2">
+    <a href="portfolio.html" class="link link-colors-2">          <!-- Portfolio link -->
       <h2 class="link-title-left">PORTFOLIO</h2>
       <p class="link-paragraph-right">see what<br>i've been<br>working on.</p>
     </a>
-    <a href="#" class="link link-colors-1">
+    <a href="resume.html" class="link link-colors-1">           <!-- Resume link -->
       <p class="link-paragraph-left">my<br>professtional<br>credentials.</p>
       <h2 class="link-title-right">RESUME</h2>
     </a>
-    <a href="#" class="link link-colors-2">
+    <a href="contact.html" class="link link-colors-2">           <!-- Contact link-->
       <h2 class="link-title-left">CONTACT</h2>
       <p class="link-paragraph-right">get<br>a hold<br>of me.</p>
     </a>
+
   </div>
   
-  <footer class="footer-container">
-    <div class="footer-left">
-      <a href="https://github.com/lacotus" target="_blank" rel="noopener noreferrer">
-        <img src="../assets/images/github-logo.png" alt="GitHub Logo" class="footer-logo">
-      </a>
-      <a href="https://www.linkedin.com/in/lacotus/" target="_blank" rel="noopener noreferrer">
-        <img src="../assets/images/linkedin-logo.png" alt="LinkedIn Logo" class="footer-logo">
-      </a>
-    </div>
-
-    <div class="footer-right">
-      &copy; 2023 Lacotus. All rights reserved.
-    </div>
-  </footer>
-
+  <div id="footer-container"></div>   <!-- Placeholder for layout loaded in from ./src/layouts with scripts.js -->
+  
 </body>
 </html>
 

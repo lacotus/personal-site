@@ -1,0 +1,26 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #038BCA;
+  color: #0C2135;
+}
+
+.footer-left {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-logo {
+  width: 32px;
+  height: auto;
+  display: block;
+}
+
+.footer-right {
+  font-size: 0.9rem;
+}
+
+

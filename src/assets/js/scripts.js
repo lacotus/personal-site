@@ -16,6 +16,21 @@ function loadHeader() {
    .catch(error => console.error("Error loading header:", error)); 
 }
 
+function loadFooter() {
+  fetch("../layouts/footer.html")
+   .then(response => response.text())
+   .then(data => {
+     // Insert the footer into the page
+     const footerContainer = document.getElementById("footer-container");
+     if (footerContainer) {
+       footerContainer.innerHTML = data;
+     } else {
+       console.error("Footer container not found in the DOM.");
+     }
+   })
+   .catch(error => console.error("Error loading footer:", error)); 
+}
+
 function initHamburger() {
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
@@ -50,6 +65,7 @@ function initScrollAnimations() {
 
 document.addEventListener("DOMContentLoaded", () => {
   loadHeader();
+  loadFooter();
   initScrollAnimations();
 });
 
