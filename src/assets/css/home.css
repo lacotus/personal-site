@@ -15,6 +15,10 @@
   border-radius: 8px; /* Rounded corners (optional) */
 }
 
+.bottom-border {
+  border-bottom: 2px solid #038BCA;
+}
+
 .background-container { /* Your background image fills the container */
   position: fixed;
   top: 0;
