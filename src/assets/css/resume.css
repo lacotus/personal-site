@@ -1,37 +1,11 @@
+/*
+Primary	    | #0C2135
+Secondary   | #98BAD3
+Contrast    | #038BCA
+ */
 
-
-
-
-
-
-
-
-
-
-
-.accordian {
-  margin: 60px auto;
-  width: 600px;
-}
-
-.accordian li {
-  list-style: none;
-  width: 100%;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-              -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-}
-
-.accordian li label {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
+body {
+  background-color: #98BAD3;
 }
 
 label::before {
@@ -45,8 +19,34 @@ input[type="radio"] {
   display: none;
 }
 
+.accordian {
+  margin: 60px auto;
+  width: 85%;
+}
+
+.accordian li {
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #0C2135;
+  /*box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+              -6px -6px 10px -1px rgba(255, 255, 255, 0.7);*/
+}
+
+.accordian li label {
+  display: flex;
+  align-items: center;
+  color: #98BAD3;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 .accordian .content {
-  color: #555;
+  color: #98BAD3;
   padding: 0 10px;
   line-height: 26px;
   max-height: 0;
@@ -61,5 +61,17 @@ input[type="radio"] {
 
 .accordian input[type="radio"]:checked + label::before {
   content: '-';
+}
+
+.main-area {
+  width: 100%;
+  height: 100vh;
+}
+
+#footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
