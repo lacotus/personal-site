@@ -18,3 +18,17 @@ body::-webkit-scrollbar {
   display: none; /* Hide the scrollbar */
 }
 
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
