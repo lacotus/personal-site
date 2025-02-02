@@ -40,9 +40,13 @@ input[type="radio"] {
   align-items: center;
   color: #98BAD3;
   padding: 10px;
-  font-size: 18px;
+  /*font-size: 18px;*/
   font-weight: 500;
   cursor: pointer;
+}
+
+.accordian h {
+  font-size: 48px;
 }
 
 .accordian .content {
