@@ -1,17 +1,14 @@
-/*
-Primary	    | #0C2135
-Secondary   | #98BAD3
-Contrast    | #038BCA
- */
+/* Map: General (applied everywhere), Accordian (for dropdown layouts), Custom (define content) */
 
+/* == General == */
 body {
-  background-color: #98BAD3;
+  background-color: var(--secondary-color);
 }
 
 label::before {
   content: '+';
   margin-right: 10px;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 600;
 }
 
@@ -19,6 +16,7 @@ input[type="radio"] {
   display: none;
 }
 
+/* == Accordian ==*/
 .accordian {
   margin: 60px auto;
   width: 85%;
@@ -30,7 +28,7 @@ input[type="radio"] {
   margin: 20px;
   padding: 10px;
   border-radius: 8px;
-  background: #0C2135;
+  background: var(--primary-color);
   /*box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
               -6px -6px 10px -1px rgba(255, 255, 255, 0.7);*/
 }
@@ -45,12 +43,26 @@ input[type="radio"] {
   cursor: pointer;
 }
 
+.accordian li ul li {
+  list-style: initial;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
 .accordian h {
   font-size: 48px;
 }
 
+.accordian p {
+  font-size: 24px;
+}
+
 .accordian .content {
   color: #98BAD3;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   padding: 0 10px;
   line-height: 26px;
   max-height: 0;
@@ -59,7 +71,7 @@ input[type="radio"] {
 }
 
 .accordian input[type="radio"]:checked + label + .content {
-  max-height: 400px;
+  max-height: 600px;
   padding: 10px 10px 20px;
 }
 
@@ -67,10 +79,38 @@ input[type="radio"] {
   content: '-';
 }
 
+.accordian h2 {
+  font-size: 36px;
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+
+/* == Custom == */
 .main-area {
   padding: 40px 0;
   overflow-y: auto;
   width: 100%;
   height: 100vh;
+}
+
+.first-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.second-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
 }
 

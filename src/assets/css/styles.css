@@ -32,3 +32,11 @@ body::-webkit-scrollbar {
   right: 0;
 }
 
+:root {
+  --primary-color: #0C2135;
+  --secondary-color: #98BAD3;
+  --accent-color: #038BCA;
+  --test-color-1: #39FF14;
+  --test-color-2: #FF10F0;
+}
+
