@@ -7,7 +7,7 @@
 
 /* Hide scrollbar but allow scrolling */
 html, body {
-  overflow-y: scroll; /* Enable scrolling */
+  overflow-y: visible; /* Enable scrolling */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer and Edge */
 }
