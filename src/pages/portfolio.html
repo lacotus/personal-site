@@ -10,6 +10,38 @@
   <link rel="stylesheet" href="../layouts/footer.css">    <!-- CSS for the footer layout -->
   <script src="../assets/js/scripts.js" defer></script>   <!-- Main JS script -->
   <script src="../assets/js/portfolio.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let currentIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+  
+      function showSlide(index) {
+          slides.forEach((slide, i) => {
+              slide.classList.toggle("active", i === index);
+          });
+      }
+  
+      function nextSlide() {
+          currentIndex = (currentIndex + 1) % slides.length; // Loop back to first
+          showSlide(currentIndex);
+          console.log('nextSlide was ran!')
+      }
+  
+      function prevSlide() {
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Loop to last
+          showSlide(currentIndex);
+          console.log('prevSlide was ran!')
+      }
+  
+      prevBtn.addEventListener("click", prevSlide);
+      nextBtn.addEventListener("click", nextSlide);
+  
+      // Initialize slider
+      showSlide(currentIndex);
+    });
+  </script>
 </head>
 <body>
 
@@ -21,13 +53,26 @@
 
   <section class="panel">
     <div class="image-container">
+
       <button id="prevBtn"><</button>
+
       <div class="slideshow">
-        <img src="../assets/images/Project Images/Smartdesk/diagnostics_animation.gif" alt="animation to show diagnostics page"/>
-        <img src="../assets/images/Project Images/Smartdesk/diagnostics_still.png" alt="still to show diagnostics page"/>
-        <img src="../assets/images/Project Images/Smartdesk/main_still.png" alt="still to show main page"/>
+        <img 
+          src="../assets/images/Project Images/Smartdesk/diagnostics_animation.gif" 
+          class="slide"
+          alt="animation to show diagnostics page"/>
+        <img 
+          src="../assets/images/Project Images/Smartdesk/diagnostics_still.png" 
+          class="slide"
+          alt="still to show diagnostics page"/>
+        <img 
+          src="../assets/images/Project Images/Smartdesk/main_still.png" 
+          class="slide"
+          alt="still to show main page"/>
       </div>
+
       <button id="nextBtn">></button>
+
     </div>
     <div class="text-container">
       <h2>Smartdesk</h2>
