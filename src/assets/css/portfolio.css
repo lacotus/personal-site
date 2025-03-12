@@ -30,11 +30,14 @@ section {
     align-items: center;
     justify-content: center;
     gap: 10px; /* Space between buttons and image */
+    width: 100%;
+    height: 80vh;
+    background-color: var(--test-color-1);
 }
 
 .slideshow {
-    width: 400px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -42,7 +45,7 @@ section {
 }
 
 .slide {
-    width: 100%;
+    width: 70%;
     height: 100%;
     object-fit: cover;
     display: none; /* Hide all images by default */
