@@ -32,25 +32,29 @@ section {
 }
 
 .image-container {
-  position: sticky;
-  top: 0;
-  height: 80vh;
-  z-index: 1;
+  /* Use flex to position buttons on left & right, image in the middle */
+  display: flex;
+  justify-content: space-between; /* pushes the .slideshow to the center */
+  align-items: center;           /* centers vertically */
+  height: 80vh;                  /* or your preferred height */
+  position: relative;
+  margin: 0 auto;
+  padding: 0 1rem; /* some horizontal padding so buttons are not at the extreme edge */
 }
 
 .slideshow {
-    width: 100%; /* Adjust width as needed */
-    height: 100%; /* Adjust height as needed */
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* Takes available space between the two buttons */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .slide {
-    width: 70%;
+    width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: none; /* Hide all images by default */
 }
 
@@ -60,7 +64,7 @@ section {
 
 button {
     background: #333;
-    color: white;
+    color: #fff;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -76,5 +80,6 @@ button:hover {
   top: 80vh;
   width: 100%;
   z-index: 2;
+  background-color: var(--test-color-1);
 }
 
